@@ -3,7 +3,6 @@
   name: job-name-blueshield
   description: job-description-blueshield 
   playTimeTracker: JobBlueshield
-  whitelisted: true
   requirements:
     - !type:DepartmentTimeRequirement
       department: Engineering
