@@ -1,5 +1,5 @@
 - type: job
-  id: BlueShield
+  id: Blueshield
   name: job-name-blueshield
   description: job-description-blueshield 
   playTimeTracker: JobBlueshield
@@ -58,7 +58,7 @@
   name: blueshield
   components:
   - type: SpawnPoint
-    job_id: BlueShield
+    job_id: Blueshield
   - type: Sprite
     layers:
       - state: green
