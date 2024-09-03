@@ -54215,7 +54215,7 @@ entities:
       active: False
       available: False
 - proto: Crowbar
-  entities: 
+  entities:
   - uid: 9403
     components:
     - type: Transform
@@ -107555,6 +107555,13 @@ entities:
     components:
     - type: Transform
       pos: -35.5,-26.5
+      parent: 2
+- proto: SpawnPointBlueshield
+  entities:
+  - uid: 18853
+    components:
+    - type: Transform
+      pos: -37.5,-0.5
       parent: 2
 - proto: SpawnPointBorg
   entities:

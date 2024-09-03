@@ -8604,8 +8604,8 @@ entities:
           id: docking46345
           localAnchorB: -0.5,-1
           localAnchorA: -66.5,22
-          damping: 42.400917
-          stiffness: 380.58975
+          damping: 42.40093
+          stiffness: 380.58987
     - type: OccluderTree
     - type: Shuttle
     - type: RadiationGridResistance
@@ -11507,7 +11507,7 @@ entities:
       pos: 24.5,16.5
       parent: 8364
     - type: Door
-      secondsUntilStateChange: -10842.86
+      secondsUntilStateChange: -10867.904
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -70231,13 +70231,6 @@ entities:
     - type: Transform
       pos: -41.5,-29.5
       parent: 8364
-- proto: ComputerShuttleSalvage
-  entities:
-  - uid: 24687
-    components:
-    - type: Transform
-      pos: -26.5,-36.5
-      parent: 8364
 - proto: ComputerSolarControl
   entities:
   - uid: 5722
@@ -84274,7 +84267,7 @@ entities:
       pos: -34.5,-14.5
       parent: 8364
     - type: Door
-      secondsUntilStateChange: -5031.397
+      secondsUntilStateChange: -5056.4414
       state: Closing
   - uid: 15010
     components:
@@ -113496,8 +113489,6 @@ entities:
     - type: Transform
       pos: -0.5,-20.5
       parent: 8364
-    - type: GravityGenerator
-      charge: 100
     - type: PointLight
       radius: 175.75
 - proto: Grille
@@ -143385,6 +143376,13 @@ entities:
     - type: Transform
       pos: 43.5,0.5
       parent: 8364
+- proto: SpawnMobGorillaLargo
+  entities:
+  - uid: 25879
+    components:
+    - type: Transform
+      pos: -30.5,-26.5
+      parent: 8364
 - proto: SpawnMobLizard
   entities:
   - uid: 20687
@@ -143457,13 +143455,6 @@ entities:
     - type: Transform
       pos: 44.5,-18.5
       parent: 8364
-- proto: SpawnMobRaccoonMorticia
-  entities:
-  - uid: 25879
-    components:
-    - type: Transform
-      pos: -30.5,-26.5
-      parent: 8364
 - proto: SpawnMobShiva
   entities:
   - uid: 16718
@@ -143520,6 +143511,13 @@ entities:
     components:
     - type: Transform
       pos: 30.5,-0.5
+      parent: 8364
+- proto: SpawnPointBlueshield
+  entities:
+  - uid: 24687
+    components:
+    - type: Transform
+      pos: -0.5,-6.5
       parent: 8364
 - proto: SpawnPointBorg
   entities:
