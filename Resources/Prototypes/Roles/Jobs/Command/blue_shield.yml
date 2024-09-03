@@ -1,0 +1,154 @@
+- type: job
+  id: BlueShield
+  name: job-name-blueshield
+  description: job-description-blueshield 
+  playTimeTracker: JobBlueshield
+  whitelisted: true
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Engineering
+      time: 72000 #20 hrs # Corvax-RoleTime
+    - !type:DepartmentTimeRequirement
+      department: Medical
+      time: 72000 #20 hrs # Corvax-RoleTime
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 72000 #20 hrs # Corvax-RoleTime
+#    - !type:DepartmentTimeRequirement
+#      department: Command
+#      time: 54000 # 15 hours
+    - !type:OverallPlaytimeRequirement
+      time: 504000 #140 hrs # Corvax-RoleTime
+    - !type:AgeRequirement
+      requiredAge: 21
+  weight: 20
+  startingGear: BlueshieldGear
+  icon: "JobIconBlueshield"
+  requireAdminNotify: true
+  joinNotifyCrew: true
+  supervisors: job-supervisors-centcom
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
+
+- type: startingGear
+  id: CaptainGear
+  equipment:
+    shoes: ClothingShoesBootsCombatFilled
+    eyes: ClothingEyesHudSecurity 
+    gloves: ClothingHandsGlovesCombat
+    id: BlueshieldPDA
+    ears: ClothingHeadsetCentCom
+    pocket1: WeaponPistolMk58
+  storage:
+    back:
+    - Flash
+
+- type: playTimeTracker
+  id: JobBlueshield
+
+- type: entity
+  id: SpawnPointBlueshield
+  parent: SpawnPointJobBase
+  name: blueshield
+  components:
+  - type: SpawnPoint
+    job_id: BlueShield
+  - type: Sprite
+    layers:
+      - state: green
+      - state: captain
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconBlueshield
+  icon:
+    sprite: /Textures/Interface/Misc/job_icons.rsi
+    state: Blueshield
+  jobName: job-name-blueshield
+
+- type: roleLoadout
+  id: JobBlueshield
+  groups:
+  - Inventory # Corvax-Loadouts
+  - BlueshieldHead
+  - BlueshieldJumpsuit
+  - BlueshieldBackpack
+  - BlueshieldOuterClothing
+  - Survival
+  - Trinkets
+  - GroupSpeciesBreathTool
+
+- type: loadoutGroup
+  id: BlueshieldHead
+  name: loadout-group-blueshield-head
+  minLimit: 1
+  loadouts:
+  - BlueshieldHead
+
+- type: loadoutGroup
+  id: BlueshieldJumpsuit
+  name: loadout-group-blueshield-jumpsuit
+  loadouts:
+  - BlueshieldJumpsuit
+  - BlueshieldJumpskirt
+
+- type: loadoutGroup
+  id: BlueshieldBackpack
+  name: loadout-group-captain-backpack
+  loadouts:
+  - BlueshieldBackpack
+
+- type: loadoutGroup
+  id: BlueshieldOuterClothing
+  name: loadout-group-captain-outerclothing
+  loadouts:
+  - BlueshieldOuterClothingMin
+  - BlueshieldOuterClothingMax
+  - BlueshieldOuterClothingOther
+
+# Jumpsuit
+- type: loadout
+  id: BlueshieldJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHoSBlack
+
+- type: loadout
+  id: BlueshieldJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtHoSBlack
+
+# Head
+- type: loadout
+  id: BlueshieldHead
+  equipment:
+    head: ClothingHeadHelmetSwat
+
+
+# Back
+- type: loadout
+  id: BlueshieldBackpack
+  equipment:
+    back: ClothingBackpackSecurity
+
+# Outer clothing
+- type: loadout
+  id: BlueshieldOuterClothingMin
+  equipment:
+    outerClothing: ClothingOuterArmorBasicSlim
+
+- type: loadout
+  id: BlueshieldOuterClothingMax
+  equipment:
+    outerClothing: ClothingOuterArmorBasic
+
+- type: loadout
+  id: BlueshieldOuterClothingOther
+  equipment:
+    outerClothing: ClothingOuterArmorBulletproof
