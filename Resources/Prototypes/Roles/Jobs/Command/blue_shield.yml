@@ -38,7 +38,7 @@
       - type: CommandStaff
 
 - type: startingGear
-  id: CaptainGear
+  id: BlueshieldGear
   equipment:
     shoes: ClothingShoesBootsCombatFilled
     eyes: ClothingEyesHudSecurity 
