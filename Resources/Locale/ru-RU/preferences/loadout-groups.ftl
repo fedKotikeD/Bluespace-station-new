@@ -29,7 +29,7 @@ loadout-group-hop-outerclothing = Глава персонала, верхняя 
 loadout-group-blueshield-head = ОСЩ, голова
 loadout-group-blueshield-jumpsuit = ОСЩ, комбинезон
 loadout-group-blueshield-backpack = ОСЩ, рюкзак
-loadout-group-captain-outerclothing = ОСЩ, бронежилет
+loadout-group-blueshield-outerclothing = ОСЩ, бронежилет
 # Civilian
 loadout-group-passenger-jumpsuit = Пассажир, комбинезон
 loadout-group-passenger-mask = Пассажир, маска
