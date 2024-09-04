@@ -1,11 +1,15 @@
-#CODEOWNERS 02.06.2024
+#CODEOWNERS 04.09.2024
 * @fedKotikeD
 
 #all translates
-*.ftl @zloy0cheburek
+# *.ftl @zloy0cheburek
+*.ftl @Not-Kluwen
 
 #all textures
-**/Resources/Textures/** @ChubciYT
+# **/Resources/Textures/** @ChubciYT
 
 #all proto
-**/Resources/Prototypes/** @IceeeCrowww
+# **/Resources/Prototypes/** @IceeeCrowww
+
+#passports
+**/Prototypes/BLUESPACE/passport.yml @Not-Kluwen
