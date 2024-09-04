@@ -17863,14 +17863,6 @@ entities:
     - type: Transform
       pos: 16.5,13.5
       parent: 2
-- proto: ComputerShuttleSalvage
-  entities:
-  - uid: 1723
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 20.5,8.5
-      parent: 2
 - proto: ComputerSolarControl
   entities:
   - uid: 1761
@@ -35587,6 +35579,13 @@ entities:
     components:
     - type: Transform
       pos: 3.5,-13.5
+      parent: 2
+- proto: SpawnPointBlueshield
+  entities:
+  - uid: 1651
+    components:
+    - type: Transform
+      pos: 1.5,1.5
       parent: 2
 - proto: SpawnPointBorg
   entities:

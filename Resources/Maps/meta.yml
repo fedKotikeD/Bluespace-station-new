@@ -10826,7 +10826,7 @@ entities:
       pos: -42.5,29.5
       parent: 5350
     - type: Door
-      secondsUntilStateChange: -4222.55
+      secondsUntilStateChange: -4234.6147
       state: Opening
     - type: DeviceLinkSink
       invokeCounter: 2
@@ -62453,13 +62453,6 @@ entities:
     - type: Transform
       pos: -42.5,17.5
       parent: 5350
-- proto: ComputerShuttleSalvage
-  entities:
-  - uid: 4103
-    components:
-    - type: Transform
-      pos: -41.5,28.5
-      parent: 5350
 - proto: ComputerSolarControl
   entities:
   - uid: 1273
@@ -107920,8 +107913,6 @@ entities:
     - type: Transform
       pos: 56.5,40.5
       parent: 5350
-    - type: GravityGenerator
-      charge: 100
     - type: PointLight
       radius: 175.75
 - proto: Grille
@@ -136690,6 +136681,13 @@ entities:
     - type: Transform
       pos: 34.5,-15.5
       parent: 5350
+- proto: SpawnMobGorillaLargo
+  entities:
+  - uid: 4006
+    components:
+    - type: Transform
+      pos: -29.5,14.5
+      parent: 5350
 - proto: SpawnMobMcGriff
   entities:
   - uid: 8224
@@ -136755,13 +136753,6 @@ entities:
     - type: Transform
       pos: 44.5,8.5
       parent: 5350
-- proto: SpawnMobRaccoonMorticia
-  entities:
-  - uid: 4006
-    components:
-    - type: Transform
-      pos: -29.5,14.5
-      parent: 5350
 - proto: SpawnMobShiva
   entities:
   - uid: 5340
@@ -136823,6 +136814,13 @@ entities:
     components:
     - type: Transform
       pos: 22.5,-13.5
+      parent: 5350
+- proto: SpawnPointBlueshield
+  entities:
+  - uid: 4103
+    components:
+    - type: Transform
+      pos: -2.5,2.5
       parent: 5350
 - proto: SpawnPointBorg
   entities:

@@ -20,6 +20,7 @@
             #command
             Captain: [ 1, 1 ]
             IAA: [ 1, 1 ] # Corvax-IAA
+            Blueshield: [ 1, 1 ]
             #service
             HeadOfPersonnel: [ 1, 1 ]
             Bartender: [ 1, 2 ]
