@@ -36,6 +36,7 @@
             Reporter: [ 1, 1 ]
             # command
             Captain: [ 1, 1 ]
+            Blueshield: [ 1, 1 ]
             IAA: [ 1, 1 ]
             # engineering
             ChiefEngineer: [ 1, 1 ]

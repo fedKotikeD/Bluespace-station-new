@@ -1,0 +1,79 @@
+- type: roleLoadout
+  id: JobBlueshield
+  groups:
+  - Inventory # Corvax-Loadouts
+  - BlueshieldHead
+  - BlueshieldJumpsuit
+  - BlueshieldBackpack
+  - BlueshieldOuterClothing
+  - Survival
+  - Trinkets
+  - GroupSpeciesBreathTool
+
+- type: loadoutGroup
+  id: BlueshieldHead
+  name: loadout-group-blueshield-head
+  minLimit: 1
+  loadouts:
+  - BlueshieldHead
+
+- type: loadoutGroup
+  id: BlueshieldJumpsuit
+  name: loadout-group-blueshield-jumpsuit
+  loadouts:
+  - BlueshieldJumpsuit
+  - BlueshieldJumpskirt
+
+- type: loadoutGroup
+  id: BlueshieldBackpack
+  name: loadout-group-captain-backpack
+  loadouts:
+  - BlueshieldBackpack
+
+- type: loadoutGroup
+  id: BlueshieldOuterClothing
+  name: loadout-group-captain-outerclothing
+  loadouts:
+  - BlueshieldOuterClothingMin
+  - BlueshieldOuterClothingMax
+  - BlueshieldOuterClothingOther
+
+# Jumpsuit
+- type: loadout
+  id: BlueshieldJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHoSBlack
+
+- type: loadout
+  id: BlueshieldJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtHoSBlack
+
+# Head
+- type: loadout
+  id: BlueshieldHead
+  equipment:
+    head: ClothingHeadHelmetSwat
+
+
+# Back
+- type: loadout
+  id: BlueshieldBackpack
+  equipment:
+    back: ClothingBackpackSecurity
+
+# Outer clothing
+- type: loadout
+  id: BlueshieldOuterClothingMin
+  equipment:
+    outerClothing: ClothingOuterArmorBasicSlim
+
+- type: loadout
+  id: BlueshieldOuterClothingMax
+  equipment:
+    outerClothing: ClothingOuterArmorBasic
+
+- type: loadout
+  id: BlueshieldOuterClothingOther
+  equipment:
+    outerClothing: ClothingOuterArmorBulletproof

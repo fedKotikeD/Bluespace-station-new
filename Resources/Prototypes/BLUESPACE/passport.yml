@@ -1,7 +1,7 @@
 - type: entity
   id: PassportPrinter
   suffix: "passport"
-  parent: AutoLathe
+  parent: Autolathe
   name: passport printer
   description: Prints passports.
   components:

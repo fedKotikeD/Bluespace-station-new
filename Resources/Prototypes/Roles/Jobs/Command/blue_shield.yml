@@ -1,0 +1,58 @@
+- type: job
+  id: Blueshield
+  name: job-name-blueshield
+  description: job-description-blueshield 
+  playTimeTracker: JobBlueshield
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Engineering
+      time: 72000 #20 hrs # Corvax-RoleTime
+    - !type:DepartmentTimeRequirement
+      department: Medical
+      time: 72000 #20 hrs # Corvax-RoleTime
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 72000 #20 hrs # Corvax-RoleTime
+#    - !type:DepartmentTimeRequirement
+#      department: Command
+#      time: 54000 # 15 hours
+    - !type:OverallPlaytimeRequirement
+      time: 504000 #140 hrs # Corvax-RoleTime
+    - !type:AgeRequirement
+      requiredAge: 30
+  weight: 20
+  startingGear: BlueshieldGear
+  icon: "JobIconBlueshield"
+  requireAdminNotify: true
+  joinNotifyCrew: true
+  supervisors: job-supervisors-centcom
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
+
+- type: startingGear
+  id: BlueshieldGear
+  equipment:
+    shoes: ClothingShoesBootsCombatFilled
+    eyes: ClothingEyesHudSecurity 
+    gloves: ClothingHandsGlovesCombat
+    id: BlueshieldPDA
+    ears: ClothingHeadsetCentCom
+    pocket1: WeaponPistolMk58
+  storage:
+    back:
+    - Flash
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconBlueshield
+  icon:
+    sprite: /Textures/Interface/Misc/job_icons.rsi
+    state: Blueshield
+  jobName: job-name-blueshield

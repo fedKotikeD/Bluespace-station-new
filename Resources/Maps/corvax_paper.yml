@@ -58839,13 +58839,6 @@ entities:
     - type: Transform
       pos: 5.5,9.5
       parent: 2
-- proto: ComputerShuttleSalvage
-  entities:
-  - uid: 6047
-    components:
-    - type: Transform
-      pos: 1.5,17.5
-      parent: 2
 - proto: ComputerSolarControl
   entities:
   - uid: 6048
@@ -115743,6 +115736,13 @@ entities:
     components:
     - type: Transform
       pos: 19.5,55.5
+      parent: 2
+- proto: SpawnPointBlueshield
+  entities:
+  - uid: 6047
+    components:
+    - type: Transform
+      pos: 27.5,25.5
       parent: 2
 - proto: SpawnPointBorg
   entities:

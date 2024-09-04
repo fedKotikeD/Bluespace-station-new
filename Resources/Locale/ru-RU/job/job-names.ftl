@@ -19,6 +19,7 @@ job-name-engineer = инженер
 job-name-atmostech = атмосферный техник
 job-name-hop = глава персонала
 job-name-captain = капитан
+job-name-blueshield = офицер "Синий Щит"
 job-name-serviceworker = сервисный работник
 job-name-centcomoff = представитель Центком
 job-name-reporter = репортёр
@@ -61,6 +62,7 @@ job-name-zombie = зомби
 # Role timers - Make these alphabetical or I cut you
 JobAtmosphericTechnician = атмосферный техник
 JobBartender = бармен
+JobBlueshield = офицер синего щита
 JobBorg = киборг
 JobBotanist = ботаник
 JobCaptain = капитан

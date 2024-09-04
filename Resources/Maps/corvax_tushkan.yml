@@ -66450,6 +66450,13 @@ entities:
     - type: Transform
       pos: 10.5,19.5
       parent: 2
+- proto: SpawnPointBlueshield
+  entities:
+  - uid: 10704
+    components:
+    - type: Transform
+      pos: 0.5,39.5
+      parent: 2
 - proto: SpawnPointBorg
   entities:
   - uid: 5156
