@@ -1,7 +1,7 @@
 - type: job
   id: Blueshield
   name: job-name-blueshield
-  description: job-description-blueshield 
+  description: job-description-blueshield
   playTimeTracker: JobBlueshield
   requirements:
     - !type:DepartmentTimeRequirement
@@ -40,11 +40,12 @@
   id: BlueshieldGear
   equipment:
     shoes: ClothingShoesBootsCombatFilled
-    eyes: ClothingEyesHudSecurity 
+    eyes: ClothingEyesHudSecurity
     gloves: ClothingHandsGlovesCombat
     id: BlueshieldPDA
     ears: ClothingHeadsetCentCom
     pocket1: WeaponPistolMk58
+    pocket2: SRPblueshield
   storage:
     back:
     - Flash
@@ -56,3 +57,10 @@
     sprite: /Textures/Interface/Misc/job_icons.rsi
     state: Blueshield
   jobName: job-name-blueshield
+
+- type: entity
+  id: SRPblueshield
+  parent: Paper
+  components:
+  - type: Paper
+    content: book-text-srpblueshield
